@@ -1,4 +1,4 @@
-package com.proyectodemo.app.rest.Model;
+package com.proyectodemo.app.rest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "TASK")
+@Table
 @NoArgsConstructor
 @AllArgsConstructor
 public class Task {

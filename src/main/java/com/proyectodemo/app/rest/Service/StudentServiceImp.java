@@ -1,6 +1,6 @@
 package com.proyectodemo.app.rest.Service;
 
-import com.proyectodemo.app.rest.Model.Student;
+import com.proyectodemo.app.rest.model.Student;
 import com.proyectodemo.app.rest.Repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

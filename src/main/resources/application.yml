@@ -1,25 +1,10 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/democrud
+    url: jdbc:mysql://localhost:3306/democrud?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: clave123
-    #hikari:
-      #connection-timeout: 20000
-      #max-lifetime: 30000 # Aquí se establece el tiempo de vida del pool de conexiones en milisegundos (1800000 = 30 min)
-      #maximum-pool-size: 10
-      #minimum-idle: 5
-      #idle-timeout: 600000
-      #pool-name: HikariCorePool
-      #connection-test-query: SELECT 1 FROM DUAL
-      #validation-timeout: 10000
-      #validation-interval: 60000
-      #debug: true
+    initialization-mode: always
   jpa:
-    default:
-      properties:
-        hibernate:
-          physical_naming_strategy: 'org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl'
-          hbm2ddl:
-            auto: update
-          show_sql: false
+    hibernate:
+      ddl-auto: update

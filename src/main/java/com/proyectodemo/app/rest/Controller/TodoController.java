@@ -1,6 +1,6 @@
 package com.proyectodemo.app.rest.Controller;
 
-import com.proyectodemo.app.rest.Model.Task;
+import com.proyectodemo.app.rest.model.Task;
 import com.proyectodemo.app.rest.Repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,9 +1,7 @@
 package com.proyectodemo.app.rest.Repository;
-import  com.proyectodemo.app.rest.Model.Task;
+import  com.proyectodemo.app.rest.model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 
 @Repository

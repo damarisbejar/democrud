@@ -1,14 +1,10 @@
 package com.proyectodemo.app.rest.Controller;
 
-import com.proyectodemo.app.rest.Model.Student;
+import com.proyectodemo.app.rest.model.Student;
 
-import com.proyectodemo.app.rest.Repository.StudentRepository;
 import com.proyectodemo.app.rest.Service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 
 @RestController

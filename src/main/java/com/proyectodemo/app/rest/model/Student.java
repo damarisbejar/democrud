@@ -1,16 +1,19 @@
-package com.proyectodemo.app.rest.Model;
+package com.proyectodemo.app.rest.model;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "STUDENT")
+@Table
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Student {
 
     @Id
@@ -29,27 +32,4 @@ public class Student {
     /*@JoinColumn(name = "student_id")
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)*/
     private Task task;
-
-    public Long getId() {
-        return id;}
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
 }
